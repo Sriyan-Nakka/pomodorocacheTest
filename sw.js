@@ -20,9 +20,9 @@ self.addEventListener("install", (e) => {
 });
 
 self.addEventListener("fetch", (e) => {
-  console.log(`Intercepting fetch request for: ${request.url}`);
+  console.log(`Intercepting fetch request for: ${request.url}, ${e}`);
 });
 
 self.addEventListener("activate", (e) => {
-  console.log("service worker activated");
+  console.log("service worker activated", e);
 });
