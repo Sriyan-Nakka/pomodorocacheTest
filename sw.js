@@ -19,7 +19,7 @@ self.addEventListener("install", (e) => {
 });
 
 self.addEventListener("fetch", (e) => {
-  console.log(`Intercepting fetch request for: ${request.url}, ${e}`);
+  console.log(`Intercepting fetch request for: ${e.url}`);
 });
 
 self.addEventListener("activate", (e) => {
